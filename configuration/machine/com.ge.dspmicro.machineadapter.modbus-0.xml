@@ -4,7 +4,7 @@
     <description>Onsite monitor modbus nodes</description>
  
     <dataNodeConfigs>
-        <channel protocol="TCP_IP" tcpIpAddress="10.193.21.229" tcpIpPort="502">
+        <channel protocol="TCP_IP" tcpIpAddress="hmk-VirtualBox.ap.freescale.net" tcpIpPort="502">
             <unit id="1">
                 <register name="Compressor-2017:CompressionRatio" dataType="SHORT" address="1" registerType="HOLDING" description="pressure ratio" />
                 <register name="Compressor-2017:DischargePressure" dataType="SHORT" address="2" registerType="HOLDING" description="discharge pressure" />
