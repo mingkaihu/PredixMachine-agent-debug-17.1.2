@@ -6,7 +6,7 @@
     <dataNodeConfigs>
         <channel protocol="TCP_IP" tcpIpAddress="10.193.21.229" tcpIpPort="502">
             <unit id="1">
-                <register name="Compressor-2015:CompressionRatio" dataType="SHORT" address="1" registerType="HOLDING" description="pressure ratio" />
+                <!-- register name="Compressor-2015:CompressionRatio" dataType="SHORT" address="1" registerType="HOLDING" description="pressure ratio" /-->
                 <register name="Compressor-2015:DischargePressure" dataType="SHORT" address="2" registerType="HOLDING" description="discharge pressure" />
                 <register name="Compressor-2015:SuctionPressure" dataType="SHORT" address="3" registerType="HOLDING" description="suction pressure" />
                 <register name="Compressor-2015:MaximumPressure" dataType="SHORT" address="4" registerType="HOLDING" description="maximum pressure" />
@@ -47,7 +47,7 @@ REMOVE THIS LINE -->
  	 -->
     <dataSubscriptionConfigs>
         <dataSubscriptionConfig name="ModBusSubscription" updateInterval="10" startPointUnit="MINUTES" startPointOffset="2">
-            <nodeName>Compressor-2015:CompressionRatio</nodeName>
+            <!-- nodeName>Compressor-2015:CompressionRatio</nodeName -->
             <nodeName>Compressor-2015:DischargePressure</nodeName>
             <nodeName>Compressor-2015:SuctionPressure</nodeName>
             <nodeName>Compressor-2015:MaximumPressure</nodeName>
