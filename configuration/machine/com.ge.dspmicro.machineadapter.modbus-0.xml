@@ -4,15 +4,15 @@
     <description>Onsite monitor modbus nodes</description>
  
     <dataNodeConfigs>
-        <channel protocol="TCP_IP" tcpIpAddress="hmk-VirtualBox.ap.freescale.net" tcpIpPort="502">
+        <channel protocol="TCP_IP" tcpIpAddress="10.193.21.229" tcpIpPort="502">
             <unit id="1">
-                <register name="Compressor-2017:CompressionRatio" dataType="SHORT" address="1" registerType="HOLDING" description="pressure ratio" />
-                <register name="Compressor-2017:DischargePressure" dataType="SHORT" address="2" registerType="HOLDING" description="discharge pressure" />
-                <register name="Compressor-2017:SuctionPressure" dataType="SHORT" address="3" registerType="HOLDING" description="suction pressure" />
-                <register name="Compressor-2017:MaximumPressure" dataType="SHORT" address="4" registerType="HOLDING" description="maximum pressure" />
-                <register name="Compressor-2017:MinimumPressure" dataType="SHORT" address="5" registerType="HOLDING" description="minimum pressure" />
-                <register name="Compressor-2017:Velocity" dataType="SHORT" address="6" registerType="HOLDING" description="velocity" />
-                <register name="Compressor-2017:Temperature" dataType="SHORT" address="7" registerType="HOLDING" description="temperature" />
+                <register name="Compressor-2015:CompressionRatio" dataType="SHORT" address="1" registerType="HOLDING" description="pressure ratio" />
+                <register name="Compressor-2015:DischargePressure" dataType="SHORT" address="2" registerType="HOLDING" description="discharge pressure" />
+                <register name="Compressor-2015:SuctionPressure" dataType="SHORT" address="3" registerType="HOLDING" description="suction pressure" />
+                <register name="Compressor-2015:MaximumPressure" dataType="SHORT" address="4" registerType="HOLDING" description="maximum pressure" />
+                <register name="Compressor-2015:MinimumPressure" dataType="SHORT" address="5" registerType="HOLDING" description="minimum pressure" />
+                <register name="Compressor-2015:Velocity" dataType="SHORT" address="6" registerType="HOLDING" description="velocity" />
+                <register name="Compressor-2015:Temperature" dataType="SHORT" address="7" registerType="HOLDING" description="temperature" />
             </unit>
         </channel>
 <!-- REMOVE THIS LINE FOR TCP/IP
@@ -46,14 +46,14 @@ REMOVE THIS LINE -->
  		updateInterval - can be set to milliseconds by specifying intervalIsMillis="true", otherwise it is interpreted as seconds
  	 -->
     <dataSubscriptionConfigs>
-        <dataSubscriptionConfig name="ModBusSubscription" updateInterval="10" startPointUnit="MINUTES" startPointOffset="-1">
-            <nodeName>Compressor-2017:CompressionRatio</nodeName>
-            <nodeName>Compressor-2017:DischargePressure</nodeName>
-            <nodeName>Compressor-2017:SuctionPressure</nodeName>
-            <nodeName>Compressor-2017:MaximumPressure</nodeName>
-            <nodeName>Compressor-2017:MinimumPressure</nodeName>
-            <nodeName>Compressor-2017:Velocity</nodeName>
-            <nodeName>Compressor-2017:Temperature</nodeName>
+        <dataSubscriptionConfig name="ModBusSubscription" updateInterval="10" startPointUnit="MINUTES" startPointOffset="2">
+            <nodeName>Compressor-2015:CompressionRatio</nodeName>
+            <nodeName>Compressor-2015:DischargePressure</nodeName>
+            <nodeName>Compressor-2015:SuctionPressure</nodeName>
+            <nodeName>Compressor-2015:MaximumPressure</nodeName>
+            <nodeName>Compressor-2015:MinimumPressure</nodeName>
+            <nodeName>Compressor-2015:Velocity</nodeName>
+            <nodeName>Compressor-2015:Temperature</nodeName>
         </dataSubscriptionConfig>
 <!-- REMOVE THIS LINE FOR TCP/IP
         <dataSubscriptionConfig name="Temperature_Subscription" updateInterval="60000" intervalIsMillis="true" startPointUnit="MINUTES" startPointOffset="10">
